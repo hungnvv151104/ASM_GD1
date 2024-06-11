@@ -211,7 +211,7 @@ fun ProductList(
     )
 
     LazyColumn(
-        modifier = Modifier.fillMaxWidth().height(450.dp),
+        modifier = Modifier.fillMaxWidth().height(550.dp),
         contentPadding = PaddingValues(16.dp)
     ) {
         items(products.chunked(2)) { productPair ->
@@ -293,21 +293,17 @@ fun ProductCard(product: Product) {
                 modifier = Modifier
                     .size(24.dp)
             )
-
-
-
         }
     }
 
 }
-@Preview (showBackground = true)
 @Composable
 fun BottomNavigation() {
     Box(
         modifier = Modifier
             .fillMaxWidth()
             .background(color = Color.White)
-            .padding(16.dp)
+            .padding(10.dp)
     ) {
         Row(
             modifier = Modifier.fillMaxWidth(),

@@ -53,7 +53,8 @@ class LoginActivity : ComponentActivity() {
                     // Xử lý sự kiện quên mật khẩu
                 },
                 onLoginClicked = { username, password ->
-                    // Xử lý sự kiện đăng nhập
+                    intent = Intent(this, HomeActivity::class.java)
+                    startActivity(intent)
                 },
                 onSignUpClicked = {
                     intent = Intent(this, SignInActivity::class.java)

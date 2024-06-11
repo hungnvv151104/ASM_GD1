@@ -122,12 +122,7 @@ fun ProductDetailsScreen(
                 horizontalArrangement = Arrangement.Absolute.Right
 
             ){
-                Button(
-                    onClick = {},
-                    modifier = Modifier
-                        .width(200.dp)
-                        .height(50.dp)
-                        .clip(RoundedCornerShape(15.dp)),
+
                     colors = ButtonDefaults.buttonColors(
                         containerColor = Color.Black,
                         contentColor = Color.White
